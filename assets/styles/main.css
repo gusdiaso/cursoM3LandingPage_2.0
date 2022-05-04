@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #000000;
+  text-align: center;
+}
+
+.page_header {
+  display: flex;
+  justify-content: center;
+  padding: 28px 0px;
+  background-color: #000000;
+  height: 100px;
+}
+
+.header_logo {
+  display: block;
+}
+
+.main_banner_desktop,
+.main_banner_mobile,
+.middle_banner {
+  width: 100%;
+  display: block;
+}
+
+.top_infocard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 186;
+}
+
+.bottom_infocard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom_infocard_image_mobile {
+  max-width: 100%;
+  display: block;
+}
+
+.bottom_infocard_image_desktop {
+  margin-bottom: 104px;
+}
+
+.top_infocard_image {
+  margin-bottom: 186px;
+}
+
+.top_infocard_text {
+  max-width: 766px;
+  padding: 0 24px 64px;
+}
+
+.bottom_infocard_text {
+  max-width: 550px;
+  margin: 0 0 64px;
+}
+
+.top_infocard_title {
+  font-weight: 500;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.bottom_infocard_title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 20px;
+  margin-bottom: 18px;
+}
+
+.top_infocard_subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.top_infocard_description,
+.bottom_infocard_description {
+  line-height: 24px;
+}
+
+.top_cards {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 24px 80px;
+}
+
+.middle_banner_background {
+  background: #e0e0e0;
+}
+
+.middle_banner {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 32px;
+  justify-content: center;
+  position: relative;
+  top: 64px;
+  margin-bottom: 202px;
+}
+
+.middle_banner_image_01,
+.middle_banner_image_02,
+.middle_banner_image_03 {
+  max-width: 556px;
+}
+
+.bottom_cards {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 138px;
+  margin-top: 187px;
+}
+
+.top_card {
+  display: flex;
+  padding: 34px 25px 28px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+}
+
+.bottom_card {
+  display: flex;
+  padding: 36px 32px 66px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.23);
+}
+
+.top_card_image {
+  display: block;
+  margin-bottom: 26px;
+}
+
+.bottom_card_image {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.top_card_description {
+  max-width: 300px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bottom_card_description {
+  max-width: 368px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  color: #ffffff;
+  padding: 38px 0 38px;
+}
+
+.footer_icons {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.footer_icon {
+  padding: 0 8px;
+}
+
+.footer_text {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1830px) {
+  .bottom_cards {
+    grid-template-columns: repeat(3, max-content);
+  }
+  .middle_banner_image_01,
+  .middle_banner_image_02,
+  .middle_banner_image_03 {
+    max-width: 368px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .bottom_infocard_image_desktop {
+    max-width: 100%;
+    display: block;
+  }
+
+  .bottom_cards {
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .middle_banner {
+    grid-template-areas:
+      'a b'
+      'c c';
+    grid-template-columns: auto;
+    gap: 24px 14px;
+  }
+  .middle_banner_image_01 {
+    max-width: 271px;
+    grid-area: a;
+  }
+  .middle_banner_image_02 {
+    max-width: 271px;
+    grid-area: b;
+  }
+  .middle_banner_image_03 {
+    max-width: 556px;
+    grid-area: c;
+  }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1280px) {
+  .bottom_infocard_text {
+    max-width: 440px;
+  }
+
+  .bottom_infocard_image {
+    max-width: 414px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .top_cards {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .bottom_card_description {
+    max-width: 290px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .top_infocard {
+    flex-direction: column;
+  }
+
+  .bottom_infocard {
+    flex-direction: column;
+  }
+
+  .bottom_cards {
+    margin-bottom: 80px;
+  }
+
+  .bottom_infocard_image_desktop {
+    margin-top: 80px;
+  }
+  .bottom_infocard_text {
+    margin: 50px 0 0;
+  }
+
+  .top_infocard_title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .top_infocard_subtitle {
+    font-size: 20px;
+  }
+
+  .bottom_infocard_image {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top_cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .top_infocard_image {
+    margin-bottom: 80px;
+  }
+  
+  .bottom_cards {
+    margin-top: 80px;
+  }
+
+  .bottom_cards {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 16px;
+    top: -82px;
+    margin-bottom: 26px;
+  }
+  .middle_banner {
+    top: 32px;
+    margin-bottom: 112px;
+  }
+  .bottom_card_description {
+    font-size: 14px;
+  }
+
+  .middle_banner_image_01 {
+    max-width: 177px;
+  }
+  .middle_banner_image_02 {
+    max-width: 177px;
+  }
+  .middle_banner_image_03 {
+    max-width: 368px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bottom_infocard_image {
+    width: 100%;
+  }
+
+  .bottom_infocard_text {
+    margin: 54px 24px 0px;
+  }
+
+  .bottom_infocard_title {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .top_infocard_image {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  .main_banner_mobile,
+  .bottom_infocard_image_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .main_banner_desktop,
+  .bottom_infocard_image_desktop {
+    display: none;
+  }
+
+  .top_infocard {
+    margin-bottom: 80px;
+  }
+
+  .bottom_infocard_image_mobile {
+    order: 1;
+  }
+
+  .bottom_infocard_text {
+    order: 2;
+    margin-bottom: 104px;
+  }
+
+  .middle_banner_image_01 {
+    max-width: 133px;
+  }
+  .middle_banner_image_02 {
+    max-width: 133px;
+  }
+  .middle_banner_image_03 {
+    max-width: 280px;
+  }
+}
